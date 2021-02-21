@@ -37,3 +37,16 @@ it can easily be update after each payment.
  * All the patients must be able to download all the medical report and bill as per his requirement by login into the system.
 
 Note: Add, delete, and update must be reflect immediately in the system.
+
+## Current Tasks:
+
+ * Prepare Software Requirement Specifications (Functional & Non-Functional)
+ * Learn required Tech Stack.
+ * Prepare Database UML diagrams.
+ * Build a simple Prototype.
+
+## Tech Stack (Under Consideration):
+
+ * Backend: Django or Java Spring
+ * Frontend: HTML/CSS, JavaScript or Java Swing
+ * Database: MySQL
