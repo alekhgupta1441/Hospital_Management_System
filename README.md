@@ -45,7 +45,7 @@ Note: Add, delete, and update must be reflect immediately in the system.
  * Prepare Database UML diagrams.
  * Build a simple Prototype.
 
-## Tech Stack (Under Consideration):
+## Tech Stack :
 
  * Backend: Java Spring
  * Frontend: HTML/CSS, JavaScript
