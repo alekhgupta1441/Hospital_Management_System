@@ -1,0 +1,101 @@
+class Person{
+	protected String name;
+	protected int age;
+	
+	public Person(String name, int age){
+		this.name = name;
+		this.age = age;
+	}
+	
+	void display(){
+		System.out.println();
+		System.out.println("Name: "+name);
+		System.out.println("Age: "+age);
+	}
+}
+
+class Student extends Person{
+	private String rollNo;
+	private String branch;
+	
+	public Student(String name, int age, String rollNo, String branch){
+		super(name, age);
+		this.rollNo = rollNo;
+		this.branch = branch;
+	}
+	
+	void display(){
+		System.out.println("Name: "+name);
+		System.out.println("Age: "+age);
+		System.out.println("Roll No.: "+rollNo);
+		System.out.println("Branch: "+branch);
+	}	
+}
+
+class Employee extends Person{
+	protected String ecNo;
+	protected String doj;
+	
+	public Employee(String name, int age, String ecNo, String doj){
+		super(name,age);
+		this.ecNo = ecNo;
+		this.doj = doj;
+	}
+	
+	void display(){
+		System.out.println("Name: "+name);
+		System.out.println("Age: "+age);
+		System.out.println("Ec. No.: "+ecNo);
+		System.out.println("Date of Joining: "+doj);
+	}
+}
+
+class Staff extends Employee{
+	private String designation;
+	
+	public Staff(String name, int age, String ecNo, String doj,String designation){
+		super(name,age,ecNo,doj);
+		this.designation = designation;
+	}
+	
+	void display(){
+		System.out.println("Name: "+name);
+		System.out.println("Age: "+age);
+		System.out.println("Ec. No.: "+ecNo);
+		System.out.println("Date of Joining: "+doj);
+		System.out.println("Designation: "+designation);
+	}
+}
+
+class Faculty extends Employee{
+	private String designation;
+	
+	public Faculty(String name, int age, String ecNo, String doj,String designation){
+		super(name,age,ecNo,doj);
+		this.designation = designation;
+	}
+	
+	void display(){
+		System.out.println("Name: "+name);
+		System.out.println("Age: "+age);
+		System.out.println("Ec. No.: "+ecNo);
+		System.out.println("Date of Joining: "+doj);
+		System.out.println("Designation: "+designation);
+	}
+}
+
+public class MainDemoClass{
+	public static void main(String[] args){
+		Person p = new Person("Vivek",20);
+		Student s = new Student("Hari",21,"15CS10078","Computer Science");
+		Employee e = new Employee("Kamal",38,"38291","9/11/2009");
+		Staff ss = new Staff("Ramu",45,"453098","11/12/2015","Technical");
+		Faculty f = new Faculty("Adil",55,"479387","23/4/2000","Professor");
+		p.display();
+		s.display();
+		e.display();
+		ss.display();
+		f.display();
+	}	
+}
+

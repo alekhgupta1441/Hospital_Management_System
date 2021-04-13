@@ -1,0 +1,65 @@
+class DynamicArray{
+	private int arr[];
+	private int tos;
+	
+	public DynamicArray(){
+		arr = new int[10];
+		tos=-1;
+	}
+	
+	void add(int x){
+		if(tos==arr.length-1){
+			int[] temp = new int[arr.length*2];
+			for(int i=0;i<=tos;i++)
+				temp[i]=arr[i];
+			arr=temp;
+		}
+		arr[++tos]=x;
+	}
+	
+	void remove(){
+	if(tos==-1){
+		System.out.println("Array is empty");
+	}
+	else{
+		System.out.println("Element removed: "+arr[tos--]);
+		if(tos+1<=(arr.length+1)/2){
+			int[] temp = new int[(arr.length+1)/2];
+			for(int i=0;i<=tos;i++)
+				temp[i]=arr[i];
+			arr=temp;
+		}	
+	}
+	}
+	
+	int size(){
+		return tos+1;
+	}
+	
+	void print(){
+		System.out.println("Elements of the array are:");
+		for(int i=0;i<=tos;i++){
+			System.out.println(arr[i]);
+		}
+	}
+
+}
+
+public class DynamicArrayTest{
+	public static void main(String[] args){
+		DynamicArray arr = new DynamicArray();
+		arr.add(20);
+		arr.add(30);
+		arr.add(10);
+		arr.add(78);
+		arr.add(46);
+		arr.add(90);
+		System.out.println("Number of elements in the array is:"+arr.size());
+		arr.print();
+		arr.remove();
+		arr.remove();
+		System.out.println("Number of elements in the array is:"+arr.size());
+		arr.print();
+	}
+	
+}

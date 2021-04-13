@@ -1,0 +1,28 @@
+interface A{
+	void doSomething();
+}
+interface B extends A{
+	void doSomethingMore();
+}
+class C implements B{
+
+	@Override
+	public void doSomething() {
+		// TODO Auto-generated method stub
+		System.out.println("I will eat today");
+	}
+
+	@Override
+	public void doSomethingMore() {
+		// TODO Auto-generated method stub
+		System.out.println("I will also study today");
+	}
+	
+}
+public class assign3 {
+	public static void main(String args[]){
+		C ob =new C();
+		ob.doSomething();
+		ob.doSomethingMore();
+	}
+}
