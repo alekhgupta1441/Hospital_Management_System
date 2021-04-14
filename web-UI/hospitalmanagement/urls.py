@@ -1,23 +1,36 @@
 """
 
-Developed By : sumit kumar
-facebook : fb.com/sumit.luv
-Youtube :youtube.com/alekhGuptas
+Developed By : Anish
+facebook : http://fb.com/profile.php?id=100012078573311
+Youtube :youtube.com/alekhGupta
 
 
 """
 
 
 
+import os
 
 from django.contrib import admin
 from django.urls import path
 from hospital import views
 from django.contrib.auth.views import LoginView,LogoutView
+from django.conf.urls.static import static
+# from django.conf import settings
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'staticfiles')
 
+#---------FOR PATIENT RELATED URLS-------------------------------------
+urlpatterns =[
+    path('patient-dashboard', views.patient_dashboard_view,name='patient-dashboard'),
+    path('patient-appointment', views.patient_appointment_view,name='patient-appointment'),
+    path('patient-book-appointment', views.patient_book_appointment_view,name='patient-book-appointment'),
+    path('patient-view-appointment', views.patient_view_appointment_view,name='patient-view-appointment'),
+    path('patient-discharge', views.patient_discharge_view,name='patient-discharge'),
+] + static(STATIC_URL, document_root=STATIC_ROOT)
 
 #-------------FOR ADMIN RELATED URLS
-urlpatterns = [
+urlpatterns += [
     path('admin/', admin.site.urls),
     path('',views.home_view,name=''),
 
@@ -90,20 +103,6 @@ urlpatterns +=[
     path('doctor-view-appointment', views.doctor_view_appointment_view,name='doctor-view-appointment'),
     path('doctor-delete-appointment',views.doctor_delete_appointment_view,name='doctor-delete-appointment'),
     path('delete-appointment/<int:pk>', views.delete_appointment_view,name='delete-appointment'),
-]
-
-
-
-
-#---------FOR PATIENT RELATED URLS-------------------------------------
-urlpatterns +=[
-
-    path('patient-dashboard', views.patient_dashboard_view,name='patient-dashboard'),
-    path('patient-appointment', views.patient_appointment_view,name='patient-appointment'),
-    path('patient-book-appointment', views.patient_book_appointment_view,name='patient-book-appointment'),
-    path('patient-view-appointment', views.patient_view_appointment_view,name='patient-view-appointment'),
-    path('patient-discharge', views.patient_discharge_view,name='patient-discharge'),
-
 ]
 
 
