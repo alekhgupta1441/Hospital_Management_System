@@ -27,7 +27,7 @@ SECRET_KEY = 'hpbv()ep00boce&o0w7z1h)st148(*m@6@-rk$nn)(n9ojj4c0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0','hospitalmanagement1712.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','0.0.0.0','hospitalmanagement1712.herokuapp.com']
 
 
 # Application definition
@@ -79,11 +79,14 @@ WSGI_APPLICATION = 'hospitalmanagement.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ddoajua058ut4s',
+        'HOST': 'ec2-18-215-111-67.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'vescqbxdgtktva',
+        "PASSWORD": '9faad0538835de7f3a86bddb2bbe5ee8e238bdc5b00e5e1359e90e22865fee51'
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -120,9 +123,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 STATICFILES_DIRS=[STATIC_DIR,]
 MEDIA_ROOT=os.path.join(BASE_DIR,'static')
 LOGIN_REDIRECT_URL='/afterlogin'
