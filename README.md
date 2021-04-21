@@ -47,6 +47,6 @@ Note: Add, delete, and update must be reflect immediately in the system.
 
 ## Tech Stack (Under Consideration):
 
- * Backend: Django or Java Spring
- * Frontend: HTML/CSS, JavaScript or Java Swing
- * Database: MySQL
+ * Backend: Django or Java Spring .
+ * Frontend: HTML/CSS, JavaScript or Java Swing .
+ * Database: MySQL .
