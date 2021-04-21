@@ -84,7 +84,7 @@ DATABASES = {
         'HOST': 'ec2-18-215-111-67.compute-1.amazonaws.com',
         'PORT': 5432,
         'USER': 'vescqbxdgtktva',
-        "PASSWORD": '9faad0538835de7f3a86bddb2bbe5ee8e238bdc5b00e5e1359e90e22865fee51'
+        'PASSWORD': '9faad0538835de7f3a86bddb2bbe5ee8e238bdc5b00e5e1359e90e22865fee51'
     }
 }
 
