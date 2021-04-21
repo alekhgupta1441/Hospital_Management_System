@@ -52,6 +52,10 @@ Note: Add, delete, and update must be reflect immediately in the system.
  * Database: MySQL .
 
 ## HOW TO RUN THIS PROJECT
+- Go to the deployed website - <b>https://hospitalmanagement1712.herokuapp.com/</b>
+
+                        OR
+
 - Install Python (Dont Forget to Tick Add to Path while installing Python)
 - Open Terminal and Execute Following Commands :
 ```
