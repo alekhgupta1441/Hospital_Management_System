@@ -47,6 +47,26 @@ Note: Add, delete, and update must be reflect immediately in the system.
 
 ## Tech Stack (Under Consideration):
 
- * Backend: Django or Java Spring .
- * Frontend: HTML/CSS, JavaScript or Java Swing .
+ * Backend: Django .
+ * Frontend: HTML/CSS, JavaScript .
  * Database: MySQL .
+
+## HOW TO RUN THIS PROJECT
+- Install Python (Dont Forget to Tick Add to Path while installing Python)
+- Open Terminal and Execute Following Commands :
+```
+pip install django
+pip install django-widget-tweaks
+pip install xhtml2pdf
+```
+- Download This Project Zip Folder and Extract it
+- Move to project folder in Terminal. Then run following Commands :
+```
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+```
+- Now enter following URL in Your Browser Installed On Your Pc
+```
+http://127.0.0.1:8000/
+```
