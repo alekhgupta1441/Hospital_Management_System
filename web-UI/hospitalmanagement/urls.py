@@ -1,13 +1,3 @@
-"""
-
-Developed By : sumit kumar
-facebook : fb.com/sumit.luv
-Youtube :youtube.com/alekhGuptas
-
-
-"""
-
-
 
 
 from django.contrib import admin
@@ -105,5 +95,4 @@ urlpatterns +=[
     path('patient-discharge', views.patient_discharge_view,name='patient-discharge'),
 
 ]
-
 
