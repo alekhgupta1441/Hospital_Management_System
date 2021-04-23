@@ -1,3 +1,7 @@
+/*
+Prototype Code for Hospital Management System
+*/
+
 #include<string.h>
 #include<stdio.h>
 #include<stdlib.h>
