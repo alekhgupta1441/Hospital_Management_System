@@ -38,20 +38,40 @@ it can easily be update after each payment.
 
 Note: Add, delete, and update must be reflect immediately in the system.
 
-## Current Tasks:
+## Tasks Completed:
 
- * Prepare Software Requirement Specifications (Functional & Non-Functional)
- * Learn required Tech Stack.
- * Prepare Database UML diagrams.
- * Build a simple Prototype.
+### Phase 1:
+ * Learnt required Tech Stack.
+ * Prepared UML diagrams for the Hospital Management System.
+ * Built a simple C Prototype, namely, HMS.c.
 
-## Tech Stack (Under Consideration):
+### Phase 2:
+ * Implemented patient, doctor and admin login & registration.
+ * Ensured unique user-id for each user login into the system.
+ * Implemented Database storage for user records.
 
- * Backend: Django .
- * Frontend: HTML/CSS, JavaScript .
- * Database: MySQL .
+### Phase 3:
+ * Implemented doctor portal to allow doctor to see patient list.
+ * Implemented appointed booking and cancelling functionality for patients.
+ * Ensured database security among users.
 
-## HOW TO RUN THIS PROJECT
+### Phase 4:
+ * Implemented UI template for Web App integrated with models.
+ * Implemented medical report and bill generation functionality.
+ * Added required UI template pages for better experience.
+
+### Phase 5 (Final):
+ * Tested the functional and non-functional requirements of project.
+ * Deployed the Web App for proper testing.
+ * Ensured proper code as well as installation documentation for Application.
+
+## Techology Stack:
+
+ * Backend: Django
+ * Frontend: HTML/CSS, JavaScript
+ * Database: MySQL or SQLite3
+
+## How to run the Web App:
 - Go to the deployed website - <b>https://hospitalmanagement1712.herokuapp.com/</b>
 
                         OR
@@ -59,18 +79,18 @@ Note: Add, delete, and update must be reflect immediately in the system.
 - Install Python (Dont Forget to Tick Add to Path while installing Python)
 - Open Terminal and Execute Following Commands :
 ```
-pip install django
-pip install django-widget-tweaks
-pip install xhtml2pdf
+	pip install django
+	pip install django-widget-tweaks
+	pip install xhtml2pdf
 ```
 - Download This Project Zip Folder and Extract it
-- Move to project folder in Terminal. Then run following Commands :
+- Move to project folder `Web-App` in Terminal. Then run following Commands :
 ```
-python manage.py makemigrations
-python manage.py migrate
-python manage.py runserver
+	python manage.py makemigrations
+	python manage.py migrate
+	python manage.py runserver
 ```
-- Now enter following URL in Your Browser Installed On Your Pc
+- Now enter following URL in Your Browser Installed On Your PC:
 ```
-http://127.0.0.1:8000/
+	http://127.0.0.1:8000/
 ```
