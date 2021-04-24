@@ -42,27 +42,27 @@ Note: Add, delete, and update must be reflect immediately in the system.
 
 ### Phase 1:
  * Learnt required Tech Stack.
- * Prepared UML diagrams for the Hospital Management System.
- * Built a simple C Prototype, namely, HMS.c.
+ * Prepared [UML diagrams](https://github.com/alekhgupta1441/Hospital_Management_System/tree/main/UML%20Diagrams) for the Hospital Management System.
+ * Built a simple C Prototype, namely, [HMS.c](https://github.com/alekhgupta1441/Hospital_Management_System/blob/main/Prototype/HMS.c).
 
 ### Phase 2:
- * Implemented patient, doctor and admin login & registration.
+ * Implemented *patient, doctor and admin login & registration*.
  * Ensured unique user-id for each user login into the system.
  * Implemented Database storage for user records.
 
 ### Phase 3:
- * Implemented doctor portal to allow doctor to see patient list.
- * Implemented appointed booking and cancelling functionality for patients.
+ * Implemented *doctor portal* to allow doctor to see *patient list*.
+ * Implemented *appointement booking* and *cancelling* functionality for patients.
  * Ensured database security among users.
 
 ### Phase 4:
- * Implemented UI template for Web App integrated with models.
+ * Implemented *UI template* for [Web App](https://github.com/alekhgupta1441/Hospital_Management_System/tree/main/Web-App) integrated with models.
  * Implemented medical report and bill generation functionality.
  * Added required UI template pages for better experience.
 
 ### Phase 5 (Final):
  * Tested the functional and non-functional requirements of project.
- * Deployed the Web App for proper testing.
+ * [Deployed the Web App](https://hospitalmanagement1712.herokuapp.com/) for proper testing.
  * Ensured proper code as well as installation documentation for Application.
 
 ## Techology Stack:
