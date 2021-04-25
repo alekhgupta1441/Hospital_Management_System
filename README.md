@@ -1,5 +1,5 @@
 # Hospital Management System
-![img1](https://user-images.githubusercontent.com/43706342/115983861-7a0ee600-a5c1-11eb-8887-2aa3bc38ca79.png)
+![img6](https://user-images.githubusercontent.com/43706342/115986726-42a73600-a5cf-11eb-9c31-6d0002e272ef.png)
 ## Overview
 
 Hospital Management System (HMS) is powerful, flexible, and easy to use system, which is very
@@ -50,7 +50,7 @@ it can easily be update after each payment.
 
 ## Techology Stack:
 
- * Backend: Django
+ * Backend: Django (Python)
  * Frontend: HTML/CSS, JavaScript
  * Database: MySQL or SQLite3
 
@@ -86,6 +86,7 @@ Note: Add, delete, and update must be reflect immediately in the system.
 - Install Python (Dont Forget to Tick Add to Path while installing Python)
 - Open Terminal and Execute Following Commands :
 ```
+	sudo apt-get install libpq-dev python-dev
 	pip install django
 	pip install django-widget-tweaks
 	pip install xhtml2pdf
@@ -104,6 +105,7 @@ Note: Add, delete, and update must be reflect immediately in the system.
 ```
 - Then run following Commands :
 ```
+	pip3 install -r requirements.txt
 	python manage.py makemigrations
 	python manage.py migrate
 	python manage.py runserver
