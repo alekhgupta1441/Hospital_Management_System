@@ -1,5 +1,5 @@
 # Hospital Management System
-
+![img1](https://user-images.githubusercontent.com/43706342/115983861-7a0ee600-a5c1-11eb-8887-2aa3bc38ca79.png)
 ## Overview
 
 Hospital Management System (HMS) is powerful, flexible, and easy to use system, which is very
@@ -14,11 +14,18 @@ authorized doctors and staffs. On the other hand, a patient should have access p
 any medical report associated with him/her. Billing process should be included in the system, such that
 it can easily be update after each payment.
 
+## Project Members/ Contributors:
+
+* [Alekh Gupta](https://github.com/alekhgupta1441) - 185002 
+* [Neerav Ganate](https://github.com/neerav1515)   - 185008
+* [Abhishek Chauhan](https://github.com/sa7890722) - 185017
+* [Anish Aggarwal](https://github.com/anishagg17)  - 185039
+
 ## Tasks Completed:
 
 ### Phase 1:
  * Learnt required Tech Stack.
- * Prepared [UML diagrams](https://github.com/alekhgupta1441/Hospital_Management_System/tree/main/UML%20Diagrams) for the Hospital Management System.
+ * Prepared [UML diagrams](https://github.com/alekhgupta1441/Hospital_Management_System/tree/main/UML%20Diagrams), [SRS](https://github.com/alekhgupta1441/Hospital_Management_System/blob/main/Hospital%20Management%20System%20SRS.pdf) and [DFD](https://github.com/alekhgupta1441/Hospital_Management_System/blob/main/Hospital%20Management%20System%20DFD.pdf) documentation for the Hospital Management System.
  * Built a simple C Prototype, namely, [HMS.c](https://github.com/alekhgupta1441/Hospital_Management_System/blob/main/Prototype/HMS.c).
 
 ### Phase 2:
@@ -85,7 +92,7 @@ Note: Add, delete, and update must be reflect immediately in the system.
 ```
 - Download This Project Zip Folder and Extract it.
 	
-	    OR
+	    		OR
 	
 - Clone the project using this command:
 ```
@@ -106,13 +113,19 @@ Note: Add, delete, and update must be reflect immediately in the system.
 	http://127.0.0.1:8000/
 ```
 
+						      Admin Portal View
+![img2](https://user-images.githubusercontent.com/43706342/115983865-7ed39a00-a5c1-11eb-92ed-b8dd060bd8ed.png)
+
+						  Appointement Requests View
+![img5](https://user-images.githubusercontent.com/43706342/115984661-eb509800-a5c5-11eb-88b5-5dc0174196d0.png)
+
 ## How to run the Desktop App:
 
 - Install [Java Development Toolkit (JDK)](https://www3.ntu.edu.sg/home/ehchua/programming/howto/JDK_HowTo.html).
 - Install [Netbeans IDE](https://www3.ntu.edu.sg/home/ehchua/programming/howto/netbeans_howto.html) on your operating system for running th project.
 - Download This Project Zip Folder and Extract it.
 	
-	    OR
+	    		OR
 	
 - Clone the project using this command:
 ```
@@ -126,3 +139,6 @@ Note: Add, delete, and update must be reflect immediately in the system.
 ```
 	java -jar "HMS.jar"
 ```
+![img3](https://user-images.githubusercontent.com/43706342/115984442-b132c680-a5c4-11eb-860d-4afd16ec2fa8.png)
+
+![img4](https://user-images.githubusercontent.com/43706342/115984443-b3952080-a5c4-11eb-829f-22c9b76fc6e1.png)
