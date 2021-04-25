@@ -1,6 +1,6 @@
-Name: Alekh
-Address: alekhgutdawd@dnd.ws
-Mobile number: 1213993987
-Specialty: 
-Age: ENT
-Hospital: 20
+Name: Alekh Gupta
+Address: Nahan
+Mobile number: 9882998552
+Specialty: ENT
+Age: 20
+Hospital: Govt.

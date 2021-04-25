@@ -1,0 +1,9 @@
+Doctor name:DC0
+Name: Mohan
+Address: Hamirpur
+Mobile number: 9123456789
+Illness: Stomach Ache
+Age: 15
+Hospital: Govt.
+Report: 1. PCM - 2/D
+2. ACR - 1/D
