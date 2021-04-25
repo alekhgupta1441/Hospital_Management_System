@@ -78,6 +78,11 @@ it can easily be update after each payment.
 
 Note: Add, delete, and update must be reflect immediately in the system.
 
+							UML Class Diagram
+<p align="center">							
+<img src="https://user-images.githubusercontent.com/43706342/115990340-4a230b00-a5e0-11eb-9e87-338d4c58b695.png" width="350" height="650">
+</p>
+
 ## How to run the Web App:
 - Go to the deployed website - <b>https://hospitalmanagement1712.herokuapp.com/</b>
 
