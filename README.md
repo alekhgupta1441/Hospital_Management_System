@@ -1,5 +1,5 @@
 # Hospital Management System
-
+![img6](https://user-images.githubusercontent.com/43706342/115986726-42a73600-a5cf-11eb-9c31-6d0002e272ef.png)
 ## Overview
 
 Hospital Management System (HMS) is powerful, flexible, and easy to use system, which is very
@@ -13,6 +13,46 @@ Each patients admitted in the hospital needs to enter their personal information
 authorized doctors and staffs. On the other hand, a patient should have access permission to download
 any medical report associated with him/her. Billing process should be included in the system, such that
 it can easily be update after each payment.
+
+## Project Members/ Contributors:
+
+* [Alekh Gupta](https://github.com/alekhgupta1441) - 185002 
+* [Neerav Ganate](https://github.com/neerav1515)   - 185008
+* [Abhishek Chauhan](https://github.com/sa7890722) - 185017
+* [Anish Aggarwal](https://github.com/anishagg17)  - 185039
+
+## Tasks Completed:
+
+### Phase 1:
+ * Learnt required Tech Stack.
+ * Prepared [UML diagrams](https://github.com/alekhgupta1441/Hospital_Management_System/tree/main/UML%20Diagrams), [SRS](https://github.com/alekhgupta1441/Hospital_Management_System/blob/main/Hospital%20Management%20System%20SRS.pdf) and [DFD](https://github.com/alekhgupta1441/Hospital_Management_System/blob/main/Hospital%20Management%20System%20DFD.pdf) documentation for the Hospital Management System.
+ * Built a simple C Prototype, namely, [HMS.c](https://github.com/alekhgupta1441/Hospital_Management_System/blob/main/Prototype/HMS.c).
+
+### Phase 2:
+ * Implemented *patient, doctor and admin login & registration*.
+ * Ensured unique user-id for each user login into the system.
+ * Implemented Database storage for user records.
+
+### Phase 3:
+ * Implemented *doctor portal* to allow doctor to see *patient list*.
+ * Implemented *appointement booking* and *cancelling* functionality for patients.
+ * Ensured database security among users.
+
+### Phase 4:
+ * Implemented *UI template* for [Web App](https://github.com/alekhgupta1441/Hospital_Management_System/tree/main/Web-App) integrated with models.
+ * Implemented medical report and bill generation functionality.
+ * Added required UI template pages for better experience.
+
+### Phase 5 (Final):
+ * Tested the functional and non-functional requirements of project.
+ * [Deployed the Web App](https://hospitalmanagement1712.herokuapp.com/) for proper testing.
+ * Ensured proper code as well as installation documentation for Application.
+
+## Techology Stack:
+
+ * Backend: Django (Python)
+ * Frontend: HTML/CSS, JavaScript
+ * Database: MySQL or SQLite3
 
 ## Project Requirements:
 
@@ -38,15 +78,69 @@ it can easily be update after each payment.
 
 Note: Add, delete, and update must be reflect immediately in the system.
 
-## Current Tasks:
+## How to run the Web App:
+- Go to the deployed website - <b>https://hospitalmanagement1712.herokuapp.com/</b>
 
- * Prepare Software Requirement Specifications (Functional & Non-Functional)
- * Learn required Tech Stack.
- * Prepare Database UML diagrams.
- * Build a simple Prototype.
+                        OR
 
-## Tech Stack (Under Consideration):
+- Install Python (Dont Forget to Tick Add to Path while installing Python)
+- Open Terminal and Execute Following Commands :
+```
+	sudo apt-get install libpq-dev python-dev
+	pip install django
+	pip install django-widget-tweaks
+	pip install xhtml2pdf
+```
+- Download This Project Zip Folder and Extract it.
+	
+	    		OR
+	
+- Clone the project using this command:
+```
+	git clone https://github.com/alekhgupta1441/Hospital_Management_System.git
+```
+- Move to project folder `Web-App` in Terminal using command:
+```
+	cd Web-App
+```
+- Then run following Commands :
+```
+	pip3 install -r requirements.txt
+	python manage.py makemigrations
+	python manage.py migrate
+	python manage.py runserver
+```
+- Now enter following URL in Your Browser Installed On Your PC:
+```
+	http://127.0.0.1:8000/
+```
 
- * Backend: Django or Java Spring
- * Frontend: HTML/CSS, JavaScript or Java Swing
- * Database: MySQL
+						      Admin Portal View
+![img2](https://user-images.githubusercontent.com/43706342/115983865-7ed39a00-a5c1-11eb-92ed-b8dd060bd8ed.png)
+
+						  Appointement Requests View
+![img5](https://user-images.githubusercontent.com/43706342/115984661-eb509800-a5c5-11eb-88b5-5dc0174196d0.png)
+
+## How to run the Desktop App:
+
+- Install [Java Development Toolkit (JDK)](https://www3.ntu.edu.sg/home/ehchua/programming/howto/JDK_HowTo.html).
+- Install [Netbeans IDE](https://www3.ntu.edu.sg/home/ehchua/programming/howto/netbeans_howto.html) on your operating system for running th project.
+- Download This Project Zip Folder and Extract it.
+	
+	    		OR
+	
+- Clone the project using this command:
+```
+	git clone https://github.com/alekhgupta1441/Hospital_Management_System.git
+```
+- Move to project folder `Desktop-App` in Terminal using command:
+```
+	cd Desktop-App
+```
+- To run the project from the command line, go to the dist folder and type the following:
+```
+	java -jar "HMS.jar"
+```
+![img3](https://user-images.githubusercontent.com/43706342/115984442-b132c680-a5c4-11eb-860d-4afd16ec2fa8.png)
+
+![img4](https://user-images.githubusercontent.com/43706342/115984443-b3952080-a5c4-11eb-829f-22c9b76fc6e1.png)
