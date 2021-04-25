@@ -14,30 +14,6 @@ authorized doctors and staffs. On the other hand, a patient should have access p
 any medical report associated with him/her. Billing process should be included in the system, such that
 it can easily be update after each payment.
 
-## Project Requirements:
-
-### Inputs:
- * Hospital information (name, address, branch, department, facilities)
- * Employee information (name, employee id, address, contact details)
- * Doctor information (name, employee id, address, contact details, specialization, degrees)
- * Patient information (name, id, address, age, payment, others)
-
-### Output:
- * Patient details
- * Patients list
- * Receipt generation
- * Report generation
-
-### Constraints:
- * All the users must register into the system though the web interface.
- * All the users must login into the web interface through userid (must be unique) and password
- * Patients should allow to get login him/her-self in order to collecting own information
- * On login into the system, a doctor must be able to see the patients list under his/her observation
- * One patient must not access the information of some other patients
- * All the patients must be able to download all the medical report and bill as per his requirement by login into the system.
-
-Note: Add, delete, and update must be reflect immediately in the system.
-
 ## Tasks Completed:
 
 ### Phase 1:
@@ -71,6 +47,30 @@ Note: Add, delete, and update must be reflect immediately in the system.
  * Frontend: HTML/CSS, JavaScript
  * Database: MySQL or SQLite3
 
+## Project Requirements:
+
+### Inputs:
+ * Hospital information (name, address, branch, department, facilities)
+ * Employee information (name, employee id, address, contact details)
+ * Doctor information (name, employee id, address, contact details, specialization, degrees)
+ * Patient information (name, id, address, age, payment, others)
+
+### Output:
+ * Patient details
+ * Patients list
+ * Receipt generation
+ * Report generation
+
+### Constraints:
+ * All the users must register into the system though the web interface.
+ * All the users must login into the web interface through userid (must be unique) and password
+ * Patients should allow to get login him/her-self in order to collecting own information
+ * On login into the system, a doctor must be able to see the patients list under his/her observation
+ * One patient must not access the information of some other patients
+ * All the patients must be able to download all the medical report and bill as per his requirement by login into the system.
+
+Note: Add, delete, and update must be reflect immediately in the system.
+
 ## How to run the Web App:
 - Go to the deployed website - <b>https://hospitalmanagement1712.herokuapp.com/</b>
 
@@ -83,8 +83,19 @@ Note: Add, delete, and update must be reflect immediately in the system.
 	pip install django-widget-tweaks
 	pip install xhtml2pdf
 ```
-- Download This Project Zip Folder and Extract it
-- Move to project folder `Web-App` in Terminal. Then run following Commands :
+- Download This Project Zip Folder and Extract it.
+	
+	    OR
+	
+- Clone the project using this command:
+```
+	git clone https://github.com/alekhgupta1441/Hospital_Management_System.git
+```
+- Move to project folder `Web-App` in Terminal using command:
+```
+	cd Web-App
+```
+- Then run following Commands :
 ```
 	python manage.py makemigrations
 	python manage.py migrate
@@ -93,4 +104,25 @@ Note: Add, delete, and update must be reflect immediately in the system.
 - Now enter following URL in Your Browser Installed On Your PC:
 ```
 	http://127.0.0.1:8000/
+```
+
+## How to run the Desktop App:
+
+- Install [Java Development Toolkit (JDK)](https://www3.ntu.edu.sg/home/ehchua/programming/howto/JDK_HowTo.html).
+- Install [Netbeans IDE](https://www3.ntu.edu.sg/home/ehchua/programming/howto/netbeans_howto.html) on your operating system for running th project.
+- Download This Project Zip Folder and Extract it.
+	
+	    OR
+	
+- Clone the project using this command:
+```
+	git clone https://github.com/alekhgupta1441/Hospital_Management_System.git
+```
+- Move to project folder `Desktop-App` in Terminal using command:
+```
+	cd Desktop-App
+```
+- To run the project from the command line, go to the dist folder and type the following:
+```
+	java -jar "HMS.jar"
 ```
