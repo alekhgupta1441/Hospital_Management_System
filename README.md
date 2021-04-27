@@ -108,9 +108,12 @@ Note: Add, delete, and update must be reflect immediately in the system.
 - Can view/download Invoice pdf (Only when that patient is discharged by admin).
 
 ---
-					       
 
-## How to run the Web App:
+## Installation Guide
+
+---
+
+### How to run the Web App:
 - Go to the deployed website - <b>https://hospitalmanagement1712.herokuapp.com/</b>
 
                         OR
@@ -153,7 +156,7 @@ Note: Add, delete, and update must be reflect immediately in the system.
 						  Appointement Requests View
 ![img5](https://user-images.githubusercontent.com/43706342/115984661-eb509800-a5c5-11eb-88b5-5dc0174196d0.png)
 
-## How to run the Desktop App:
+### How to run the Desktop App:
 
 - Install [Java Development Toolkit (JDK)](https://www3.ntu.edu.sg/home/ehchua/programming/howto/JDK_HowTo.html).
 - Install [Netbeans IDE](https://www3.ntu.edu.sg/home/ehchua/programming/howto/netbeans_howto.html) on your operating system for running th project.
