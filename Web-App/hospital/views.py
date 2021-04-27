@@ -37,7 +37,7 @@ def patientclick_view(request):
 
 
 
-
+# method for registeration of admin
 def admin_signup_view(request):
     form=forms.AdminSigupForm()
     if request.method=='POST':
@@ -52,8 +52,7 @@ def admin_signup_view(request):
     return render(request,'hospital/adminsignup.html',{'form':form})
 
 
-
-
+# method for registeration of doctor
 def doctor_signup_view(request):
     userForm=forms.DoctorUserForm()
     doctorForm=forms.DoctorForm()
@@ -73,7 +72,7 @@ def doctor_signup_view(request):
         return HttpResponseRedirect('doctorlogin')
     return render(request,'hospital/doctorsignup.html',context=mydict)
 
-
+# method for registeration of doctor
 def patient_signup_view(request):
     userForm=forms.PatientUserForm()
     patientForm=forms.PatientForm()
@@ -722,7 +721,7 @@ def patient_book_appointment_view(request):
             doctor=models.Doctor.objects.get(user_id=request.POST.get('doctorId'))
             
             if doctor.department == 'Cardiologist':
-                if 'heart' in desc:
+                if 'heart' in desc or 'cardiac' in desc:
                     pass
                 else:
                     print('else')
@@ -739,7 +738,8 @@ def patient_book_appointment_view(request):
                     return render(request,'hospital/patient_book_appointment.html',{'appointmentForm':appointmentForm,'patient':patient,'message':message})
 
             if doctor.department == 'Emergency Medicine Specialists':
-            	pass
+            	if 'accident' in desc or 'serious' in desc:
+                    pass
 
             if doctor.department == 'Allergists/Immunologists':
                 if 'allergy' in desc:
@@ -750,7 +750,7 @@ def patient_book_appointment_view(request):
                     return render(request,'hospital/patient_book_appointment.html',{'appointmentForm':appointmentForm,'patient':patient,'message':message})
 
             if doctor.department == 'Anesthesiologists':
-                if 'surgery' in desc:
+                if 'surgery' in desc or 'operation' in desc:
                     pass
                 else:
                     print('else')
@@ -758,7 +758,7 @@ def patient_book_appointment_view(request):
                     return render(request,'hospital/patient_book_appointment.html',{'appointmentForm':appointmentForm,'patient':patient,'message':message})
 
             if doctor.department == 'Colon and Rectal Surgeons':
-                if 'cancer' in desc:
+                if 'cancer' in desc or 'ulcer' in desc:
                     pass
                 else:
                     print('else')
