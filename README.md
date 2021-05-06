@@ -1,5 +1,6 @@
 # Hospital Management System
 ![img6](https://user-images.githubusercontent.com/43706342/115986726-42a73600-a5cf-11eb-9c31-6d0002e272ef.png)
+
 ## Overview
 
 Hospital Management System (HMS) is powerful, flexible, and easy to use system, which is very
@@ -14,14 +15,25 @@ authorized doctors and staffs. On the other hand, a patient should have access p
 any medical report associated with him/her. Billing process should be included in the system, such that
 it can easily be update after each payment.
 
-## Project Members/ Contributors:
+--------------------------------------------------------------------------------------------------------------
+## Project Submission Details:
 
-* [Alekh Gupta](https://github.com/alekhgupta1441) - 185002 
-* [Neerav Ganate](https://github.com/neerav1515)   - 185008
-* [Abhishek Chauhan](https://github.com/sa7890722) - 185017
-* [Anish Aggarwal](https://github.com/anishagg17)  - 185039
 
+* **Names of Project Members/Contributors:**
+
+	* [Alekh Gupta](https://github.com/alekhgupta1441) (185002) 
+	* [Neerav Ganate](https://github.com/neerav1515)   (185008)
+	* [Abhishek Chauhan](https://github.com/sa7890722) (185017)
+	* [Anish Aggarwal](https://github.com/anishagg17)  (185039)
+
+* **Course:**  CSD-327 Software Engineering LAB
+* **Date:** May 6th, 2021
+* **Submitted to:** Dr. Dharmendra Prasad Mahto
+
+
+---------------------------------------------------------------------------------------------------------------
 ## Tasks Completed:
+
 
 ### Phase 1:
  * Learnt required Tech Stack.
